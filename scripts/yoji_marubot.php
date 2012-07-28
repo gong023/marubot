@@ -12,6 +12,7 @@ foreach ($member as $m) {
 	$message = $message . '@' . $m . ' ';
 }
 $message = $message . 'ご飯いる？';
+print_r($message);
 $req = $tweet->tweetResult($message);
 
 $mongo = MongoMaru::getInstance();
